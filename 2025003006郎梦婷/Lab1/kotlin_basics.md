@@ -61,7 +61,11 @@ I'm learning Kotlin!
 ```kotlin
 // 请将完整代码粘贴至此
 ```
-
+fun main() {
+    println("My name is langmengting")
+    println("My student ID is 2025003006 ")
+    println("I'm learning Kotlin!")
+}
 ---
 
 ## 题目 3：修正编译错误
@@ -86,7 +90,9 @@ fun main() {
 ```kotlin
 // 请将修正后的完整代码粘贴至此
 ```
-
+fun main() {
+    println("Student 2025003006 says hello")
+}
 ---
 
 **练习 3.2**
@@ -104,7 +110,9 @@ fun main() {
 ```kotlin
 // 请将修正后的完整代码粘贴至此
 ```
-
+fun main() {
+     println("Hello, my name is langmengting")
+}
 ---
 
 **练习 3.3**
@@ -128,7 +136,11 @@ Course: Kotlin
 ```kotlin
 // 请将修正后的完整代码粘贴至此
 ```
-
+fun main() {
+     println("ID: 2025003006") 
+     println("Name: langmengting") 
+     println("Course: Kotlin")
+}
 ---
 
 **练习 3.4**
@@ -146,7 +158,9 @@ fun main() (
 ```kotlin
 // 请将修正后的完整代码粘贴至此
 ```
-
+fun main() {
+      println("My ID ends with 6")
+}
 ---
 
 ## 题目 4：字符串模板
@@ -173,7 +187,10 @@ You have 42 unread messages.
 ```kotlin
 // 请将完整代码粘贴至此
 ```
-
+fun main() {
+     val numberOfMessages = "06"  
+    println("You have $numberOfMessages unread messages.")
+}
 ---
 
 ## 题目 5：字符串串联
@@ -191,7 +208,11 @@ Package for zhangwei will arrive, tracking ID: 20231042.
 ```kotlin
 // 请将完整代码粘贴至此
 ```
-
+fun main() {
+    val name:String ="langmengting"
+    val studentID:String = "2025003006"  
+    println("Package for $name will arrive, tracking ID: $studentID")
+}
 ---
 
 ## 题目 6：消息格式
@@ -220,7 +241,15 @@ Total: 44
 ```kotlin
 // 请将完整代码粘贴至此
 ```
-
+fun main() {
+    val studentName ="langmengting"
+    val score        = 60
+    val bonus       = 6
+    val total       = score+bonus
+    println("Name:$studentName")
+    println("Score:$score,Bonus:$bonus")
+    println("Total:$total")
+}
 ---
 
 ## 题目 7：实现基本数学运算
@@ -242,7 +271,15 @@ Total: 44
 ```kotlin
 // 请将完整代码粘贴至此
 ```
-
+fun main() {
+   val unreadCount: Int = 0
+   val resdCount: Int = 6
+   println("$unreadCount + $resdCount = ${unreadCount + resdCount}")
+   println("$unreadCount - $resdCount = ${unreadCount - resdCount}")
+   println("$unreadCount * $resdCount = ${unreadCount * resdCount}")
+   println("$unreadCount / $resdCount = ${unreadCount / resdCount}")
+   println("$unreadCount % $resdCount = ${unreadCount % resdCount}")
+}
 ---
 
 ## 题目 8：默认参数
@@ -274,7 +311,14 @@ Happy Birthday, zhangwei! You are now 4 years old!
 ```kotlin
 // 请将完整代码粘贴至此
 ```
-
+fun main() {
+   println(langmengtingGreeting(age = 6))  
+   println(langmengtingGreeting("langmengting", 0)) 
+}
+fun langmengtingGreeting(name: String = "2025003006", age: Int): String {
+    return "Happy Birthday, $name! You are now $age years old!"
+    
+}
 ---
 
 ## 题目 9：计步器
@@ -308,7 +352,18 @@ Walking 4200 steps burns 168.0 calories
 ```kotlin
 // 请将重命名后的完整代码粘贴至此
 ```
+fun main() {
+    val Steps = 6 * 100                                      // 改为 AB * 100
+    val caloriesBurned = PEDOMETERstepsTOcalories(Steps)
+    println("Walking $Steps steps burns $caloriesBurned calories")
+}
 
+fun PEDOMETERstepsTOcalories(NumberOFStepS: Int): Double {
+    val CaloriesBURNEDforEachStep = 0.04
+    val TotalCALORIESburned = NumberOFStepS * CaloriesBURNEDforEachStep
+    return TotalCALORIESburned
+    
+}
 ---
 
 ## 题目 10：比较两个数字
@@ -336,7 +391,18 @@ fun main() {
 ```kotlin
 // 请将完整代码粘贴至此
 ```
-
+fun main() {
+    val first = 0    // 替换为你的实际数值
+    val second = 6
+    if (first > second){
+        println(first)  
+    }else if (second > first){
+        println(second)
+    }else{
+        println("First and second are equal.")
+    } 
+    
+}
 ---
 
 ## 题目 11：将重复代码移至一个函数中
@@ -376,7 +442,19 @@ fun main() {
 ```kotlin
 // 请将完整代码粘贴至此
 ```
-
+fun main() {
+    printLangmengtingWeather("Ankara",27,31,82)
+    printLangmengtingWeather("Tokyo",32,36,10)
+    printLangmengtingWeather("Cape Town",59,64,2)
+    printLangmengtingWeather("Guatemala City",50,55,7)
+    
+}
+fun printLangmengtingWeather(city:String,lowTemp:Int,highTemp:Int,rainChance:Int){
+    println("City:$city")
+    println("Low temperature:$lowTemp,High temperature:$highTemp")
+    println("Chance of rain:$rainChance%")
+    println()
+}
 ---
 
 ## 参考资料
