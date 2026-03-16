@@ -59,7 +59,11 @@ I'm learning Kotlin!
 **你的答案：**
 
 ```kotlin
-// 请将修正后的完整代码粘贴至此
+fun main() {
+    println("My name is anruijia")
+	println("My student ID is 20250030212")
+	println("I'm learning Kotlin!")
+}
 ```
 
 ---
@@ -85,7 +89,9 @@ fun main() {
 
 ```kotlin
 // 请将修正后的完整代码粘贴至此
-
+fun main() {
+    println("Student [2025003021] says hello")
+}
 ```
 
 ---
@@ -104,7 +110,9 @@ fun main() {
 
 ```kotlin
 // 请将修正后的完整代码粘贴至此
-
+fun main() {
+    println("Hello, my name is [安芮佳]")
+}
 ```
 
 ---
@@ -129,7 +137,11 @@ Course: Kotlin
 
 ```kotlin
 // 请将修正后的完整代码粘贴至此
-
+fun main() {
+    println("ID: [2025003021]") 
+    println("Name: [安芮佳]") 
+    println("Course: Kotlin")
+}
 ```
 
 ---
@@ -148,7 +160,9 @@ fun main() (
 
 ```kotlin
 // 请将修正后的完整代码粘贴至此
-
+fun main() (
+    println("My ID ends with [1]")
+)
 ```
 
 ---
@@ -175,7 +189,11 @@ You have 42 unread messages.
 **你的答案：**
 
 ```kotlin
-
+// 请将完整代码粘贴至此
+fun main() {
+    val numberOfMessages = 42 
+    println("You have $numberOfMessages unread messages.") 
+}
 ```
 
 ---
@@ -193,7 +211,11 @@ Package for zhangwei will arrive, tracking ID: 20231042.
 **你的答案：**
 
 ```kotlin
-
+// 请将完整代码粘贴至此
+fun main() { 
+    val anruijiaDelivery = "2025003021" 
+    println("Package for anruijia will arrive, tracking ID: " + anruijiaDelivery + "." )
+}
 ```
 
  
@@ -224,7 +246,17 @@ Total: 44
 
 ```kotlin
 // 请将完整代码粘贴至此
+fun main(){
+    val studentName = "anruijia"   
+    val score     = 21          
+    val bonus     = 1       
+    val total     = score + bonus
+    println("Name:  $studentName") 
+    println("Score: $score, Bonus: $bonus") 
+    println("Total: $total") 
 
+
+}
 ```
 
 ---
@@ -247,7 +279,16 @@ Total: 44
 
 ```kotlin
 // 请将完整代码粘贴至此
+fun main() {
+    val operandOne = 20
+    val operandTwo = 1
+    println("$operandOne+$operandTwo=${operandOne+operandTwo}") 
+    println("$operandOne-$operandTwo=${operandOne-operandTwo}") 
+    println("$operandOne/$operandTwo=${operandOne/operandTwo}") 
+    println("$operandOne*$operandTwo=${operandOne*operandTwo}") 
+    println("$operandOne%$operandTwo=${operandOne%operandTwo}") 
 
+}
 ```
 
 ---
@@ -280,6 +321,14 @@ Happy Birthday, zhangwei! You are now 4 years old!
 
 ```kotlin
 // 请将完整代码粘贴至此
+fun main() {
+    println(anruijiaGreeting(age = 1))       
+    println(anruijiaGreeting("anruijia", 2))  
+}
+
+fun anruijiaGreeting(name: String = "2025003021", age: Int): String {
+    return "Happy Birthday, $name! You are now $age years old!"
+}
 
 ```
 
@@ -315,6 +364,18 @@ Walking 4200 steps burns 168.0 calories
 
 ```kotlin
 // 请将重命名后的完整代码粘贴至此
+fun main() {
+    val Steps = 21*100                                    
+    val caloriesBurned = PEDOMETERstepsTOcalories(Steps)
+    println("Walking $Steps steps burns $caloriesBurned calories")
+}
+
+fun PEDOMETERstepsTOcalories(NumberOFStepS: Int): Double {
+    val CaloriesBURNEDforEachStep = 0.04
+    val TotalCALORIESburned = NumberOFStepS * CaloriesBURNEDforEachStep
+    return TotalCALORIESburned
+}
+
 ```
 
 ---
@@ -343,6 +404,19 @@ fun main() {
 
 ```kotlin
 // 请将完整代码粘贴至此
+fun main() {
+    val first = 20   
+    val second = 21    
+    // 使用 if/else 比较并输出结果
+    if (first > second) {
+        println(first)
+    } else if (second > first) {
+        println(second)
+    } else {
+        println("First and second are equal.")
+    }
+}
+
 ```
 
 ---
@@ -383,6 +457,21 @@ fun main() {
 
 ```kotlin
 // 请将完整代码粘贴至此
+fun main() {
+    printAnruijiaWeather("Ankara", 27, 31, "82%")
+    printAnruijiaWeather("Tokyo", 32, 36, "10%")
+    printAnruijiaWeather("Cape Town", 59, 64, "2%")
+    printAnruijiaWeather("Guatemala City", 50, 55, "7%")
+}
+
+// 封装天气信息输出的函数
+fun printAnruijiaWeather(city: String, lowTemp: Int, highTemp: Int, rainChance: String) {
+    println("City: $city")
+    println("Low temperature: $lowTemp, High temperature: $highTemp")
+    println("Chance of rain: $rainChance")
+    println()
+}
+
 ```
 
 ---
