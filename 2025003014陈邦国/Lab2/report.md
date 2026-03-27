@@ -7,10 +7,10 @@
 本次电子名片实现展示的个人信息如下：
 - 头像 / Logo：自定义 Android 图标（anzhuo.png）
 - 姓名：陈邦国
-- 职位：Android Developer Extraordinaire
-- 联系方式：学号 2025003014
+- 职位：Android 开发工程师
+- 联系方式：电话 1234567890
 - 社交账号：@chenbangguo
-- 邮箱：chenbangguo@school.com
+- 邮箱：2116321787@qq.com
 
 ## 二、布局结构简要说明
 整体采用 Jetpack Compose 声明式 UI 开发，通过可组合函数（Composable）构建界面，布局层次清晰、可复用性强。
@@ -25,7 +25,7 @@
 - Modifier：修饰符，用于设置组件大小、内边距、背景色、填充方式、对齐方式等
 
 ### 2. 布局嵌套结构
-- 最外层容器：Column 铺满全屏，设置浅绿背景，整体内容垂直居中、水平居中
+- 最外层容器：Column 铺满全屏，设置深蓝色背景，整体内容垂直居中、水平居中
 - 上半部分（CardTop）：Column 嵌套 Image + 两个 Text，依次展示头像、姓名、职位
 - 下半部分（CardBottom）：Column 嵌套三个 ContactRow 组件
 - 联系方式行（ContactRow）：Row 横向排列 Icon + Text，实现图标与对应文字的组合样式
